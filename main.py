@@ -21,7 +21,7 @@ all_states=data.state.to_list()
 missed_state=[]
 guessed_state=[]
 while len(guessed_state) < 28:
-	answer=screen.textinput(title="Guess the state", prompt="What is the another state's name").title()
+	answer=screen.textinput(title=f"{len(guessed_state)}/28 States Correct", prompt="What is the another state's name").title()
 
 	if answer == "Exit":
 		for miss in all_states:
